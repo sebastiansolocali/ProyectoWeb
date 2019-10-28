@@ -1,7 +1,10 @@
 .o-section-home{
     display: flex;
+    height: 150rem;
     justify-content: center;
-    background: red;
+    background-image: url("../../Img/fondo_home.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .o-home-container {
@@ -15,18 +18,28 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: chartreuse;
 }
 
 .o-access-container {
     width: 10rem;
     justify-content: space-between;
     display: flex;
-    background: chocolate;
 }
 
 .o-title-home {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.o-button-signin {
+    padding: 0.5rem 2rem;
+    border: none;
+    background: none;
+}
+
+.o-button-readmore {
+    padding: 0.5rem 2rem;
+    background: linear-gradient(to right, rgba(153, 235, 187), rgba(103, 255, 199));
+    border: none;
 }

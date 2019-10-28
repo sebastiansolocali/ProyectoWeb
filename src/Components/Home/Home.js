@@ -18,7 +18,7 @@ class Home extends Component {
                     <div className="o-header">
                         <h5>Hypnotic</h5>
                         <div className="o-access-container">
-                            <button>Sign in</button>
+                            <button className="o-button-signin">Sign in</button>
                             <button>Login</button>
                         </div>
                     </div>
@@ -26,7 +26,7 @@ class Home extends Component {
                         <h1>E-come</h1>
                         <h4>Welcome</h4>
                     </div>
-                    <button>Read More</button>
+                    <button className="o-button-readmore">Read More</button>
                 </div>
             </section>
         )
