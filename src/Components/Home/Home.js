@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 
 import Header1 from '../Header/Header1'
 
-import './Home.css'
-
 import fondo from '../../Img/fondo_home.png'
+
+import './Home.css'
 
 class Home extends Component {
 
@@ -18,7 +18,7 @@ class Home extends Component {
     render() {
         return (
             <div className="o-home">
-                <img alt="" src={fondo} className="o-img-fondo"/>
+                <img alt="" src={fondo} className="o-img-fondo-home"/>
                 <section className="o-home-section">
                     <Header1 />
                     <div className="o-title-home">

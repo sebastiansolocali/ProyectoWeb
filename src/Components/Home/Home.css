@@ -4,12 +4,13 @@
     flex-direction: column;
 }
 
-.o-img-fondo {
+.o-img-fondo-home {
     position: relative;
     width: 153.4vh;
 }
 
 .o-home-section {
+    width: 55rem;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -27,6 +28,7 @@
 }
 
 .o-button {
+    color: rgb(42, 105, 104);
     font-weight: bold;
     padding: 0.5rem 2rem;
     border: none;
@@ -34,18 +36,14 @@
 }
 
 .o-button-signin {
-    color: rgb(255, 255, 255);
     background: none;
-    border: 2px solid rgb(255, 255, 255);
 }
 
 .o-button-login {
-    color: rgb(42, 105, 104);
-    background: rgb(255, 255, 255);
+    background: rgb(109, 226, 198);
 }
 
 .o-button-readmore {
-    color: rgb(255, 255, 255);
     background: linear-gradient(to right, rgba(153, 235, 187), rgba(103, 255, 199));
     border: none;
 }
