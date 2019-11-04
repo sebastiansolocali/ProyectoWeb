@@ -16,19 +16,6 @@
     align-items: flex-start;
 }
 
-.o-header {
-    width: 55rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.o-access-container {
-    width: 15rem;
-    justify-content: space-between;
-    display: flex;
-}
-
 .o-title-home {
     display: flex;
     flex-direction: column;

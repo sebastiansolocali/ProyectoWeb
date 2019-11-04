@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import Header1 from '../Header/Header1'
+
 import './Home.css'
 
 import fondo from '../../Img/fondo_home.png'
@@ -18,13 +20,7 @@ class Home extends Component {
             <div className="o-home">
                 <img alt="" src={fondo} className="o-img-fondo"/>
                 <section className="o-home-section">
-                    <div className="o-header">
-                        <h5>Hypnotic</h5>
-                        <div className="o-access-container">
-                            <button className="o-button o-button-signin">Sign in</button>
-                            <button className="o-button o-button-login">Login</button>
-                        </div>
-                    </div>
+                    <Header1 />
                     <div className="o-title-home">
                         <h1 className="o-text">E-come</h1>
                         <h4 className="o-text">Welcome</h4>
