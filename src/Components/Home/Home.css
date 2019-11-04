@@ -1,27 +1,30 @@
-.o-section-home{
+.o-home{
     display: flex;
-    height: 150rem;
-    justify-content: center;
-    background-image: url("../../Img/fondo_home.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    align-items: center;
+    flex-direction: column;
 }
 
-.o-home-container {
+.o-img-fondo {
+    position: relative;
+    width: 153.4vh;
+}
+
+.o-home-section {
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
 .o-header {
-    width: 80rem;
+    width: 55rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .o-access-container {
-    width: 10rem;
+    width: 15rem;
     justify-content: space-between;
     display: flex;
 }
@@ -32,14 +35,54 @@
     align-items: flex-start;
 }
 
-.o-button-signin {
+.o-text {
+    color: rgb(42, 105, 104);
+}
+
+.o-button {
+    font-weight: bold;
     padding: 0.5rem 2rem;
     border: none;
+    border-radius: 0.7rem;
+}
+
+.o-button-signin {
+    color: rgb(255, 255, 255);
     background: none;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.o-button-login {
+    color: rgb(42, 105, 104);
+    background: rgb(255, 255, 255);
 }
 
 .o-button-readmore {
-    padding: 0.5rem 2rem;
+    color: rgb(255, 255, 255);
     background: linear-gradient(to right, rgba(153, 235, 187), rgba(103, 255, 199));
     border: none;
+}
+
+.o-readmore-section {
+    position: absolute;
+    margin-top: 133vh;
+    width: 55rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.o-readmore-text {
+    width: 17rem;
+}
+
+.o-info-section {
+    position: absolute;
+    margin-top: 220vh;
+    width: 55rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.o-info {
+    width: 20rem;
 }
