@@ -1,0 +1,19 @@
+.o-login {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.o-header {
+    margin-left: 0rem;
+}
+
+.o-img-fondo-login {
+    position: relative;
+    margin-top: 3.5rem;
+    width: 97vh;
+}
+
+.o-login-section {
+    position: absolute;
+}
