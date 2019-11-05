@@ -15,5 +15,27 @@
 }
 
 .o-login-section {
-    position: absolute;
+    position: absolute;   
+}
+
+.o-box-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.o-info-login {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    background: rgb(143, 232, 190);
+}
+
+.o-input {
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.3rem 1rem;
+    border: none;
 }

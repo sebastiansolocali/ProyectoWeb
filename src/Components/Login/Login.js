@@ -24,7 +24,10 @@ class Login extends Component {
                     <div className="o-box-login">
                         <h2>E-come</h2>
                         <div className="o-info-login">
-                            
+                            <h4>Login</h4>
+                            <input className="o-input" type="text" placeholder="Username"/>
+                            <input className="o-input" type="password" placeholder="Password"/>
+                            <button className="o-button">Login</button>
                         </div>
                     </div>
                 </section>
