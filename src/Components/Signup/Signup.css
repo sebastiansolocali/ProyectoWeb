@@ -1,0 +1,40 @@
+.o-signup {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.o-header {
+    margin-left: 0rem;
+}
+
+.o-img-fondo-signup {
+    position: relative;
+    width: 97vh;
+}
+
+.o-signup-section {
+    position: absolute;   
+}
+
+.o-box-signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.o-info-signup {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    background: rgb(143, 232, 190);
+}
+
+.o-input {
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.3rem 1rem;
+    border: none;
+}
