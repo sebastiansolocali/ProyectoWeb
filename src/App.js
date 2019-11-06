@@ -1,16 +1,18 @@
 import React from 'react';
-import Home from '../src/Components/Home/Home';
-import Login from '../src/Components/Login/Login';
-import Signup from '../src/Components/Signup/Signup';
+// import Home from '../src/Components/Home/Home';
+// import Login from '../src/Components/Login/Login';
+// import Signup from '../src/Components/Signup/Signup';
+import Profile from '../src/Components/Profile/Profile';
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Home />
+      {/* <Home />
       <Login />
-      <Signup />
+      <Signup /> */}
+      <Profile />
     </div>
   );
 }
