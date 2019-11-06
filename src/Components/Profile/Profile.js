@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 
-import Header from '../Header/Header2'
+import Header2 from '../Header/Header2'
+
+import User from '../../Img/user.png'
 
 import './Profile.css'
 
@@ -16,7 +18,7 @@ class Profile extends Component {
     render(){
         return(
             <div>
-                <Header />
+                <Header2 img={User} />
             </div>
         )
     }
