@@ -18,9 +18,11 @@ class Signup extends Component {
     render() {
         return(
             <div className="o-signup">
-                <img alt="" src={fondo} className="o-img-fondo-signup"/>
+                <div className="o-img-container-signup">
+                    <img alt="" src={fondo} className="o-img-fondo-signup"/>
+                </div>
                 <section className="o-signup-section">
-                    <Header1 className="o-header"/>
+                    <Header1 />
                     <div className="o-box-signup">
                         <h2>E-come</h2>
                         <div className="o-info-signup">
