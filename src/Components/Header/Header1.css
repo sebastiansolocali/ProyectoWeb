@@ -1,4 +1,4 @@
-.o-header {
+.o-header1 {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -7,6 +7,6 @@
 
 .o-access-container {
     width: 15rem;
-    justify-content: space-between;
     display: flex;
+    justify-content: space-between;
 }
