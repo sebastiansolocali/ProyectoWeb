@@ -1,4 +1,5 @@
 .o-home{
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -6,11 +7,11 @@
 
 .o-img-fondo-home {
     position: relative;
-    width: 153.4vh;
+    width: 100%;
 }
 
 .o-home-section {
-    width: 55rem;
+    width: 80%;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -50,8 +51,8 @@
 
 .o-readmore-section {
     position: absolute;
-    margin-top: 133vh;
-    width: 55rem;
+    margin-top: 90%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
 }
@@ -62,8 +63,8 @@
 
 .o-info-section {
     position: absolute;
-    margin-top: 220vh;
-    width: 55rem;
+    margin-top: 145%;
+    width: 80%;
     display: flex;
     justify-content: flex-end;
 }

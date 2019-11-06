@@ -29,15 +29,15 @@ class Home extends Component {
                 </section>
                 <section className="o-readmore-section">
                     <div className="o-readmore-text">
-                        <h5>Desconecta tus electrodomésticos desde un solo lugar</h5>
+                        <h5>Disconnect your devices from one place</h5>
                     </div>
                     <div className="o-readmore-text">
-                        <h5>¿Se te olvidó apagar el televisor? Tranquilo, nosotros te lo apagamos</h5>
+                        <h5>Did you forget to turn off your tv? Don't you worry, we'll do it for you</h5>
                     </div>
                 </section>
                 <section className="o-info-section">
                     <div className="o-info">
-                        <h5>Controla el consumo energético de tus electrodomésticos, desconéctalos y ayuda al medio ambiente</h5>
+                        <h5>Do not waste energy on your devices, turn them off and help the planet</h5>
                     </div>
                 </section>
             </div>
