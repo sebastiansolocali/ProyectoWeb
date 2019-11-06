@@ -1,21 +1,27 @@
 .o-login {
+    width: 100%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
 }
 
-.o-header {
-    margin-left: 0rem;
+.o-img-container-login {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .o-img-fondo-login {
     position: relative;
-    margin-top: 3.5rem;
-    width: 97vh;
+    width: 51%;
 }
 
 .o-login-section {
-    position: absolute;   
+    width: 80%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .o-box-login {

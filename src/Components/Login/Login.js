@@ -18,9 +18,11 @@ class Login extends Component {
     render(){
         return(
             <div className="o-login">
-                <img alt="" src={fondo} className="o-img-fondo-login"/>
+                <div className="o-img-container-login">
+                    <img alt="" src={fondo} className="o-img-fondo-login"/>
+                </div>
                 <section className="o-login-section">
-                    <Header1 className="o-header"/>
+                    <Header1 />
                     <div className="o-box-login">
                         <h2>E-come</h2>
                         <div className="o-info-login">
