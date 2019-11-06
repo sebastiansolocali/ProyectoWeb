@@ -1,12 +1,25 @@
 .o-header2 {
     width: 100%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(42, 105, 104);
+}
+
+.o-credits-container {
+    margin-left: 2rem;
+    width: 20rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.o-access-container {
-    width: 15rem;
-    display: flex;
-    justify-content: space-between;
+.o-title-header2 {
+    margin: 1rem 0rem;
+}
+
+.o-img-profile {
+    margin-right: 2rem;
+    width: 4rem;
 }
