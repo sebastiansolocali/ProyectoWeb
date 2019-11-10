@@ -1,10 +1,10 @@
 .o-header2 {
     width: 100%;
-    color: rgb(255, 255, 255);
+    color: rgb(42, 105, 104);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgb(42, 105, 104);
+    background: linear-gradient(to right, rgba(103, 255, 199), rgba(153, 235, 187));
 }
 
 .o-credits-container {
@@ -21,5 +21,5 @@
 
 .o-img-profile {
     margin-right: 2rem;
-    width: 4rem;
+    width: 3rem;
 }
