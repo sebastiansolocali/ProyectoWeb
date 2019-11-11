@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+import imgAdd from '../../Img/add_home.png';
+
 import './CardHome.css';
 
 class CardHome extends Component {
@@ -13,7 +15,10 @@ class CardHome extends Component {
 
     render() {
         return(
-            <div>cardhome</div>
+            <div className="o-card-home">
+                <img alt="" src={imgAdd} className="o-img-addhome" />
+                <p className="o-text-addhome">Add new home</p>
+            </div>
         )
     }
 
