@@ -1,0 +1,9 @@
+.o-profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.o-profile-content {
+    display: flex;
+    flex-wrap: wrap;
+}

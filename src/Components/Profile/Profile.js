@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 
 import Header2 from '../Header/Header2'
+import CardHome from '../CardHome/CardHome'
 
 import User from '../../Img/user.png'
 
@@ -17,8 +18,18 @@ class Profile extends Component {
 
     render(){
         return(
-            <div>
+            <div className="o-profile">
                 <Header2 img={User} />
+                <div className="o-profile-content">
+                    <CardHome />
+                    <CardHome />
+                    <CardHome />
+                    <CardHome />
+                    <CardHome />
+                    <CardHome />
+                    <CardHome />
+                    <CardHome />
+                </div>
             </div>
         )
     }
