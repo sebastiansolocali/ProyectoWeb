@@ -15,7 +15,7 @@ const app = express();
 admin.initializeApp();
 
 app.get('/functions', (req, res) => {
-    res.send("express desde firebase cloud functions")
+    res.send("hola con express desde firebase cloud functions")
 });
 
 exports.app = functions.https.onRequest(app);
