@@ -1,7 +1,9 @@
 import React, {Component} from 'react'
 
 import Header2 from '../Header/Header2'
-import CardHome from '../CardHome/CardHome'
+// import CardHome from '../CardHome/CardHome'
+
+import ToolsHome from '../ToolsHome/ToolsHome'
 
 import User from '../../Img/user.png'
 
@@ -20,16 +22,11 @@ class Profile extends Component {
         return(
             <div className="o-profile">
                 <Header2 img={User} />
-                <div className="o-profile-content">
+                {/* <div className="o-profile-content">
                     <CardHome />
                     <CardHome />
-                    <CardHome />
-                    <CardHome />
-                    <CardHome />
-                    <CardHome />
-                    <CardHome />
-                    <CardHome />
-                </div>
+                </div> */}
+                <ToolsHome />
             </div>
         )
     }
