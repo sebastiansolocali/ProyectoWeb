@@ -1,0 +1,35 @@
+.o-toolshome {
+    display: flex;
+}
+
+.o-layers {
+    width: 12rem;
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: royalblue;
+}
+
+.o-design {
+    width: 40rem;
+    height: 89vh;
+    background: red;
+}
+
+.o-details {
+    width: 12rem;
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: green;
+}
+
+.o-room {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px gray;
+    background: #f0f0f0
+  }
