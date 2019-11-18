@@ -27,6 +27,22 @@ firebase.initializeApp(firebaseConfig);
 const app = express();
 app.use(express.json());
 
+// ------------------ HOME LIST
+app.post("/functions/homelist", (req, res) => {
+
+  var search;
+
+  firebase
+    .database()
+    .ref(`/usuarios/${req.body.data.username}/rooms`)
+    .on("value", data => {
+      search = data;
+    });
+
+    console.log(`Se cosultó HomeList sobre ${req.params.user}`);
+    res.send(search);
+});
+
 // ------------------ GET
 app.get("/functions/:user", (req, res) => {
   var consulta;
