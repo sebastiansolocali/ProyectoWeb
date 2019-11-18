@@ -30,6 +30,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid 1px gray;
-    background: #f0f0f0
-  }
+    border: solid 2px gray;
+    background: #f0f0f0;
+}
+
+.o-sensor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px gray;
+    border-radius: 50%;
+    background: #f0f0f0;
+}
