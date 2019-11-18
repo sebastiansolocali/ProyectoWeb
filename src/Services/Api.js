@@ -12,8 +12,13 @@ const getHomeList = (data) => {
         }
     };
 
+    console.log(data)
+
+    console.log("hola estoy a punto de hacer fetch")
+
     fetch(`${urlApi}/homelist`, complement)
         .then(res => {
+            console.log(res)
             return res.json();
         })
         .catch(error => console.error('Error:', error))
@@ -23,3 +28,5 @@ const getHomeList = (data) => {
         })
 
 }
+
+export default getHomeList

@@ -1,48 +1,81 @@
 import React, { Component } from "react";
 import { Rnd } from "react-rnd";
 
+import getHomeList from '../../Services/Api';
+
 import "./ToolsHome.css";
 
-var roomList = [];
+var homeList = {
+  rooms: {
+    room1: {
+      id: 1,
+      width: 200,
+      height: 200,
+      x: 10,
+      y: 10
+    },
+    room2: {
+      id: 2,
+      width: 150,
+      height: 150,
+      x: 10,
+      y: 10
+    }
+  },
+  sensors: {
+    sensor: {
+      id: 1,
+      width: 40,
+      height: 40,
+      x: 10,
+      y: 10
+    }
+  }
+};
+
+var data = {
+  username: "juanda3098"
+}
 
 class ToolsHome extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      rooms: {
-        room1: {
-          id: 1,
-          width: 200,
-          height: 200,
-          x: 10,
-          y: 10
-        },
-        room2: {
-          id: 2,
-          width: 150,
-          height: 150,
-          x: 10,
-          y: 10
-        }
-      },
-      sensors: {
-        // sensor: {
-        //   id: 1,
-        //   width: 40,
-        //   height: 40,
-        //   x: 10,
-        //   y: 10
-        // }
-      }
+      // rooms: {
+      //   room1: {
+      //     id: 1,
+      //     width: 200,
+      //     height: 200,
+      //     x: 10,
+      //     y: 10
+      //   },
+      //   room2: {
+      //     id: 2,
+      //     width: 150,
+      //     height: 150,
+      //     x: 10,
+      //     y: 10
+      //   }
+      // },
+      // sensors: {
+      //   // sensor: {
+      //   //   id: 1,
+      //   //   width: 40,
+      //   //   height: 40,
+      //   //   x: 10,
+      //   //   y: 10
+      //   // }
+      // }
     };
   }
 
   UNSAFE_componentWillMount() {
-
+    console.log("se montará");
+    homeList = getHomeList(data);
   }
 
   UNSAFE_componentWillUpdate(prevProps, prevState, snapshot) {
-    
+
   }
 
   addRoom() {
@@ -54,7 +87,7 @@ class ToolsHome extends Component {
   }
 
   updateList() {
-    this.setState({rooms: roomList})
+    // this.setState({ rooms: roomList })
   }
 
   render() {
@@ -65,7 +98,7 @@ class ToolsHome extends Component {
           <button className="o-button">Back</button>
         </div>
         <div className="o-design">
-          {Object.values(this.state.rooms).map((room, index) => {
+          {Object.values(homeList.rooms).map((room, index) => {
             return (
               <div key={index}>
                 <Rnd
@@ -87,17 +120,17 @@ class ToolsHome extends Component {
                     //   y: ${d.y}
                     // }`);
                     // this.updateList();
-                    this.setState({
-                      rooms: {
-                        room: {
-                          id: index + 1,
-                          width: room.width,
-                          height: room.height,
-                          x: d.x,
-                          y: d.y
-                        }
-                      }
-                    });
+                    // this.setState({
+                    //   rooms: {
+                    //     room: {
+                    //       id: index + 1,
+                    //       width: room.width,
+                    //       height: room.height,
+                    //       x: d.x,
+                    //       y: d.y
+                    //     }
+                    //   }
+                    // });
                   }}
                   onResizeStop={(e, direction, ref, delta, position) => {
                     // roomList.push(`room${index + 1}: {
@@ -108,16 +141,16 @@ class ToolsHome extends Component {
                     //   y: ${position}
                     // }`);
                     // this.updateList(index, ref, position);
-                    this.setState({
-                      rooms: {
-                        index: {
-                          id: index + 1,
-                          width: ref.style.width,
-                          height: ref.style.height,
-                          ...position
-                        }
-                      }
-                    });
+                    // this.setState({
+                    //   rooms: {
+                    //     index: {
+                    //       id: index + 1,
+                    //       width: ref.style.width,
+                    //       height: ref.style.height,
+                    //       ...position
+                    //     }
+                    //   }
+                    // });
                   }}
                 >
                   <p>Cuarto</p>
@@ -125,8 +158,8 @@ class ToolsHome extends Component {
               </div>
             );
           })}
-          
-          {Object.values(this.state.sensors).map((sensor, index) => {
+
+          {/* {Object.values(this.state.sensors).map((sensor, index) => {
             return (
               <div key={index}>
                 <Rnd
@@ -157,7 +190,7 @@ class ToolsHome extends Component {
                 </Rnd>
               </div>
             );
-          })}
+          })} */}
         </div>
         <div className="o-details">
           <button onClick={this.addRoom()} className="o-button">Add Room</button>

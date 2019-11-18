@@ -32,14 +32,17 @@ app.post("/functions/homelist", (req, res) => {
 
   var search;
 
+  console.log("functions")
+  console.log(req.body);
+
   firebase
     .database()
-    .ref(`/usuarios/${req.body.data.username}/rooms`)
+    .ref(`/usuarios/${req.body.username}/rooms`)
     .on("value", data => {
       search = data;
     });
 
-    console.log(`Se cosultó HomeList sobre ${req.body.data.username}`);
+    console.log(`Se cosultó HomeList sobre ${req.body.username}`);
     res.send(search);
 });
 
