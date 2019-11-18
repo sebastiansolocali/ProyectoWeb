@@ -3,18 +3,27 @@ import { Rnd } from "react-rnd";
 
 import "./ToolsHome.css";
 
+var roomList = [];
+
 class ToolsHome extends Component {
   constructor(props) {
     super(props);
     this.state = {
       rooms: {
-        // room: {
-        //   id: 1,
-        //   width: 200,
-        //   height: 200,
-        //   x: 10,
-        //   y: 10
-        // }
+        room1: {
+          id: 1,
+          width: 200,
+          height: 200,
+          x: 10,
+          y: 10
+        },
+        room2: {
+          id: 2,
+          width: 150,
+          height: 150,
+          x: 10,
+          y: 10
+        }
       },
       sensors: {
         // sensor: {
@@ -30,11 +39,10 @@ class ToolsHome extends Component {
 
   UNSAFE_componentWillMount() {
 
-    // console.log(prevState);
   }
 
   UNSAFE_componentWillUpdate(prevProps, prevState, snapshot) {
-    // console.log(prevState);
+    
   }
 
   addRoom() {
@@ -43,6 +51,10 @@ class ToolsHome extends Component {
 
   addSensor() {
 
+  }
+
+  updateList() {
+    this.setState({rooms: roomList})
   }
 
   render() {
@@ -67,9 +79,17 @@ class ToolsHome extends Component {
                     y: room.y
                   }}
                   onDragStop={(e, d) => {
+                    // roomList.push(`room${index + 1}: {
+                    //   id: ${index + 1},
+                    //   width: ${room.width},
+                    //   height: ${room.height},
+                    //   x: ${d.x},
+                    //   y: ${d.y}
+                    // }`);
+                    // this.updateList();
                     this.setState({
                       rooms: {
-                        index: {
+                        room: {
                           id: index + 1,
                           width: room.width,
                           height: room.height,
@@ -80,6 +100,14 @@ class ToolsHome extends Component {
                     });
                   }}
                   onResizeStop={(e, direction, ref, delta, position) => {
+                    // roomList.push(`room${index + 1}: {
+                    //   id: ${index + 1},
+                    //   width: ${ref.style.width},
+                    //   height: ${ref.style.height},
+                    //   x: ${position},
+                    //   y: ${position}
+                    // }`);
+                    // this.updateList(index, ref, position);
                     this.setState({
                       rooms: {
                         index: {
