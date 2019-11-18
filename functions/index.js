@@ -39,7 +39,7 @@ app.post("/functions/homelist", (req, res) => {
       search = data;
     });
 
-    console.log(`Se cosultó HomeList sobre ${req.params.user}`);
+    console.log(`Se cosultó HomeList sobre ${req.body.data.username}`);
     res.send(search);
 });
 
