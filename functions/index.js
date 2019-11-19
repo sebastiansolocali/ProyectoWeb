@@ -10,6 +10,7 @@
 const functions = require("firebase-functions");
 const express = require("express");
 const firebase = require("firebase");
+const cors = require("cors");
 
 var firebaseConfig = {
   apiKey: "AIzaSyBBuGV1dEsO79Fz4rLZgdHicSPPcwgxjl8",
@@ -26,6 +27,7 @@ firebase.initializeApp(firebaseConfig);
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 // ------------------ HOME LIST
 app.post("/functions/homelist", (req, res) => {
@@ -34,6 +36,7 @@ app.post("/functions/homelist", (req, res) => {
 
   console.log("functions")
   console.log(req.body);
+  console.log(req.body.username);
 
   firebase
     .database()
