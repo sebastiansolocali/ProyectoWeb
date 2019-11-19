@@ -3,25 +3,24 @@ const urlApi = "https://us-central1-proyectoweb-67fae.cloudfunctions.net/app/fun
 const getHomeList = (data) => {
 
     var complement = {
+        mode: 'cors',
         method: 'POST',
+        body: JSON.stringify(data),
         headers: {
-            'Content-Type': 'application/json'
+            'Access-Control-Allow-Origin': '*',
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
         },
-        body: {
-            data
-        }
     };
 
     console.log(data)
-
-    console.log("hola estoy a punto de hacer fetch")
 
     fetch(`${urlApi}/homelist`, complement)
         .then(res => {
             console.log(res)
             return res.json();
         })
-        .catch(error => console.error('Error:', error))
+        .catch(error => console.error('Error fetch:', error))
         .then(response => {
             console.log("Respuesta ", response);
             return response
