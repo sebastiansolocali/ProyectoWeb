@@ -33,45 +33,23 @@ var homeList = {
   }
 };
 
-var data = {
-  username: "juanda3098"
-}
+var data = {username: "juanda3098"};
 
 class ToolsHome extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      // rooms: {
-      //   room1: {
-      //     id: 1,
-      //     width: 200,
-      //     height: 200,
-      //     x: 10,
-      //     y: 10
-      //   },
-      //   room2: {
-      //     id: 2,
-      //     width: 150,
-      //     height: 150,
-      //     x: 10,
-      //     y: 10
-      //   }
-      // },
-      // sensors: {
-      //   // sensor: {
-      //   //   id: 1,
-      //   //   width: 40,
-      //   //   height: 40,
-      //   //   x: 10,
-      //   //   y: 10
-      //   // }
-      // }
+
     };
+    homeList = getHomeList(data);
   }
 
   UNSAFE_componentWillMount() {
-    console.log("se montará");
-    homeList = getHomeList(data);
+
+  }
+
+  componentDidMount() {
+
   }
 
   UNSAFE_componentWillUpdate(prevProps, prevState, snapshot) {
